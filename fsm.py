@@ -35,6 +35,9 @@ class OrderPizzaFsm:
         self.machine.add_transition(trigger='next', source='order', dest='pizza')
         self.machine.add_transition(trigger='next', source='skip_order', dest='pizza')
 
+        self.pizza_size = None
+        self.payment_type = None
+
 
     def output_approve(self):
         return 'Вы хотите %s пиццу, оплата - %s ?' % (self.pizza_size, self.payment_type)
