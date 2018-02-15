@@ -1,0 +1,2 @@
+telepot==12.5
+transitions==0.6.4
